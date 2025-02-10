@@ -1,7 +1,7 @@
 -- 创建 OrderStatus 表
 CREATE TABLE IF NOT EXISTS order_status (
                                             order_status_id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                                            status_name VARCHAR(50) NOT NULL UNIQUE,
+                                            order_status_name VARCHAR(50) NOT NULL UNIQUE,
     description VARCHAR(255)
     );
 
@@ -63,8 +63,8 @@ CREATE TABLE IF NOT EXISTS service_order (
 CREATE TABLE IF NOT EXISTS clinical_service_configuration (
                                                               config_id BIGINT AUTO_INCREMENT PRIMARY KEY,
                                                               order_id BIGINT NOT NULL,
-                                                              max_sessions_per_week INT NOT NULL,
-                                                              requires_doctor_approval BOOLEAN DEFAULT FALSE,
+                                                              max_session_per_week INT NOT NULL,
+                                                              required_doctor_approval BOOLEAN DEFAULT FALSE,
                                                               therapy_duration_minutes INT NOT NULL,
                                                               created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
                                                               updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS ndis_db
+DEFAULT CHARACTER SET utf8mb4
+DEFAULT COLLATE utf8mb4_unicode_ci;
+
 -- 创建 OrderStatus 表
 CREATE TABLE IF NOT EXISTS order_status (
                                             order_status_id BIGINT AUTO_INCREMENT PRIMARY KEY,

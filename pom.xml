@@ -25,7 +25,7 @@
                <groupId>org.springframework.boot</groupId>
                <artifactId>spring-boot-maven-plugin</artifactId>
                <configuration>
-                   <mainClass>com.larry.NdisOrderApiApplication</mainClass>
+                   <mainClass>com.larry.ndis_order_api.NdisOrderApiApplication</mainClass>
                    <layout>JAR</layout>
                </configuration>
 
